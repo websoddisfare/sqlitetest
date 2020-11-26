@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { Sqlite3Service } from "./services/sqlite3.service";
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Sqlite3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
